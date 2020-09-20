@@ -27,4 +27,10 @@ public class MyController {
     }
 
 
+    @GetMapping("/theBoys")
+    public String theBoys() {
+        return "TheBoys";
+    }
+
+
 }
