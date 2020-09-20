@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        .header {
+            padding: 0px;
+            margin: 0;
+            top: 8px;
+            left: 16px;
+            font-size: 38px;
+            font-weight: bold;
+            color: red;
+        }
+
+
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 16.6667%;
+            padding: 15px;
+            height: 200px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            padding: 5px ;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<span class="header">Netfleks </span>
+<span><a href="/">Start</a></span>
+<span><a href="/movies">Movies</a></span>
+<span><a href="/series">Series</a></span>
+
+
+<h2>Trending</h2>
+
+<div class="row">
+    <div class="column" style="background-image: url(/imagesMovies/baby-driver-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/bad-boys-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/dunkirk-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/joker-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/The-blind-side-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/titanic-pic.jpg);background-size: 100% 200px"></div>
+</div>
+
+<h2>Not trending</h2>
+
+<div class="row">
+    <div class="column" style="background-image: url(/imagesMovies/after-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/archer-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/narnia-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/one-year-in-love-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/tagline-pic.jpg);background-size: 100% 200px"></div>
+    <div class="column" style="background-image: url(/imagesMovies/star-is-born-pic.jpg);background-size: 100% 200px"></div>
+</div>
+
+
+
+<div class="footer">
+    <p>Footer</p>
+</div>
+
+</body>
+</html>
+
